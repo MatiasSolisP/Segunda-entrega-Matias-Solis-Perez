@@ -1,0 +1,54 @@
+
+/*-barra nav-*/
+
+nav img{
+    width: 80px;
+    height: 80px;
+}
+
+.bg-barra{
+    background-color: rgb(245, 141, 22);
+}
+
+.dropdown-menu{
+    background-color: rgb(245, 141, 22);
+    border: 1px solid white;
+}
+
+.dropdown-item{
+    background-color: rgb(245, 141, 22);
+    color: white;
+}
+.dropdown-item:hover{
+    background-color: white;
+    color: rgb(245, 141, 22);
+}
+
+.dropdown-divider{background-color: white;}
+
+.btn-outline-success{
+    background-color: white;
+    color: rgb(245, 141, 22);
+    border: 1px solid white;
+}
+
+.btn-outline-success:hover{
+    background-color: rgb(245, 141, 22);
+    border: 1px solid white;
+} 
+
+header{
+    background-color:rgb(245, 141, 22) ;
+}
+
+header h1{
+    width: 100%;
+    font-size: 16px;
+    color: white;
+}
+
+
+
+/*- barra nav -*/
+
+/*- inicio -*/
