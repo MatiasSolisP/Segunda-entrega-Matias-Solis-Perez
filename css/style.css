@@ -13,38 +13,46 @@ nav img{
 }
 
 .bg-barra{
-    background-color: rgb(245, 141, 22);
+    background-color: rgba(254,115,0,255);
 }
 
 .dropdown-menu{
-    background-color: rgb(245, 141, 22);
+    background-color: rgba(254,115,0,255);
     border: 1px solid white;
 }
 
 .dropdown-item{
-    background-color: rgb(245, 141, 22);
+    background-color: rgba(254,115,0,255);
     color: white;
 }
 .dropdown-item:hover{
     background-color: white;
-    color: rgb(245, 141, 22);
+    color: rgba(254,115,0,255);
 }
 
 .dropdown-divider{background-color: white;}
 
 .btn-outline-success{
     background-color: white;
-    color: rgb(245, 141, 22);
+    color: rgba(254,115,0,255);
     border: 1px solid white;
 }
 
 .btn-outline-success:hover{
-    background-color: rgb(245, 141, 22);
+    background-color: rgba(254,115,0,255);
     border: 1px solid white;
 } 
 
 header{
-    background-color:rgb(245, 141, 22) ;
+    background-color:rgba(254,115,0,255) ;
+}
+
+.nav-link.active{
+    color: white !important;
+}
+
+.nav-link{
+    color: white !important;
 }
 
 header h1{
@@ -63,10 +71,22 @@ header h1{
     text-align: center;
     color: white;
     width: 100%;
-    height: 380px;
-    background-image:url("../img/inicio.jpg");
+    height: 700px;
+    background-image:url("../img/ini\ \(1\).jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
+    background-position: center;
+}
+
+.bienvenidos{
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 450px;
+    background-image: url("../img/bienvenidos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
