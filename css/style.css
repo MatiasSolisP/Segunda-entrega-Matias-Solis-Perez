@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/*-barra nav-*/
+/*-barra nav -*/
 
 nav img{
     width: 80px;
@@ -101,7 +101,6 @@ header h1{
     align-items: center;
 }
 
-
 .productos{
     text-align: center;
     font-family: "Jost";
@@ -167,6 +166,7 @@ header h1{
 
 /*- inicio -*/
 
+
 /*- footer -*/
 
 footer{
@@ -189,7 +189,8 @@ footer .wpp-icono{
 
 /*- footer -*/
 
-/*media query*/ 
+
+/*- media query -*/ 
 
 @media screen and (max-width:386px){
     .header{
@@ -257,4 +258,40 @@ footer .wpp-icono{
     }
 }
 
-/*media query*/
+/*- media query -*/ 
+
+/*- nosotros -*/
+
+.grid-img{
+    background-color:rgba(254,115,0,255);
+    padding: 20px;
+    width: 100%;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    gap: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.grid-item{
+    background-color: white;
+}
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-4{
+    grid-row: span 3;
+}
+
+.img-2{
+    grid-row: span 3;
+}
+
+.img-5{
+    grid-row: span 3;
+}
+
