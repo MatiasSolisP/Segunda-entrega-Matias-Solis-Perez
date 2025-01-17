@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Jost";
 }
 
 /*-barra nav -*/
@@ -72,15 +73,18 @@ header h1{
     font-family: "Jost";
     color: white;
     width: 100%;
-    height: 900px;
+    height: 700px;
     background-image:url("../img/inicio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
+.hero h2{
+    font-size: 70px;
+}
 
-.bienvenidos{
+.bienvenidos {
     text-align: center;
     font-family: "Jost";
     font-weight: 400;
@@ -95,10 +99,15 @@ header h1{
 }
 
 .bienvenidos-centro h2{
+    font-size: 50px;
     height: 275px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.parrafos-bienvenidos{
+    font-size: 25px;
 }
 
 .productos{
@@ -116,10 +125,15 @@ header h1{
 }
 
 .productos-centro h2{
+    font-size: 50px;
     height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.parrafo-prod{
+    font-size: 25px;
 }
 
 .mas-vendidos{
@@ -129,6 +143,7 @@ header h1{
     background-color: rgba(254,115,0,255);
     height: 100%;
     text-align: center;
+    padding-top: 20px;
 }
 
 .mas-vendidos h2{
@@ -153,16 +168,26 @@ header h1{
     flex-wrap: wrap;
 }
 
-.prod-mas-vendidos div a{
-    list-style: none;
-    text-decoration: none;
-    color: white;
-}
-
 .prod-mas-vendidos img{
     width: 380px;
     height: 380px;
 }
+
+.btn.btn-primary{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-color: white;
+    background-color: rgba(254,115,0,255);
+    margin: 10px;
+}
+
+.btn-primary:hover{
+    color: rgba(254,115,0,255) !important;
+    border-color: rgba(254,115,0,255) !important;
+    background-color: white !important;
+}
+
 
 /*- inicio -*/
 
@@ -170,13 +195,15 @@ header h1{
 /*- footer -*/
 
 footer{
+    width: 100%;
+    height: 780px;
     background-color: rgba(254,115,0,255);
 }
 
 footer div a .redes{
     width: 30px;
     height: 30px;
-    margin: 10px 0px 10px 10px;
+    margin: 30px 150px 0px 85px;
 }
 
 footer .wpp-icono{
@@ -185,6 +212,26 @@ footer .wpp-icono{
     position: fixed;
     bottom: 10px;
     right: 10px;
+}
+
+.contacto{
+    text-align: center;
+    h3{
+        font-size: 3em;
+    }
+    p{
+        font-size: 1.2em;
+    }
+}
+
+iframe{
+    margin: 30px 0px 0px 550px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+iframe:hover{
+    transform: scale(1.1);
 }
 
 /*- footer -*/
@@ -320,4 +367,159 @@ footer .wpp-icono{
     }
 }
 
+@media screen and (max-width:660px){
+    .grid-img{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 400px;
+    }
+}
 /*- nosotros -*/
+
+/*- sabores -*/
+
+.carousel{
+    background-color:rgba(254,115,0,255);
+}
+.carousel img{
+    height:450px;
+    padding: 10px;
+    border-radius: 3em;
+}
+
+.grid-sab{
+    background-color:rgba(254,115,0,255);
+    text-align: center;
+    color: wheat;
+    padding: 20px;
+    width: 100%;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    gap: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.grid-item-sab img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-sab img{
+    border-radius: 20px;
+}
+
+.grid-sab .img-1{
+    grid-column: span 2;
+}
+
+.grid-sab .img-2{
+    grid-row: span 4;
+}
+
+.grid-sab .img-4{
+    grid-row: span 3;
+}
+
+.grid-sab .img-5{
+    grid-row: span 3;
+}
+
+.grid-sab .img-6{
+    grid-column: span 2;
+}
+
+.grid-sab h2 p{
+    color: white;
+    margin: 20px;
+    background-color: rgba(254,115,0,255);
+    text-align: center;
+    font-family: "Jost";
+    font-size: 35px;
+}
+
+@media screen and(max-width: 1334px;){
+    .grid-sab h2{
+        ;
+    }
+}
+
+/*- sabores -*/
+
+/*- menu -*/
+
+div h5.card-title{
+    text-align: center;
+}
+
+.menu-cards p.card-text{
+    text-align: center;
+}
+.menu h2{
+    color: white;
+    background-color: rgba(254,115,0,255);
+    padding: 10px;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 0%
+}
+
+.menu-cards{
+    background-color:rgba(254,115,0,255);
+    padding: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+    row-gap: 20px;
+    column-gap: 300px;
+}
+
+h3{
+    color: white;
+    background-color: rgba(254,115,0,255);
+    padding: 10px;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 0%
+}
+
+.card-body a.btn.btn-primary{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-color: rgba(254,115,0,255);
+    background-color: rgba(254,115,0,255);
+    display: flex;
+    justify-content: center;
+}
+
+/*- menu -*/
+
+/*- contacto -*/
+
+.contacto-img{
+    padding:  50px;
+    width: 100%;
+    height: 600px;
+    background-image:url("../img/contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.contacto-img h2{
+    margin: 30px;
+    color: white;
+    background-color: rgba(254,115,0,255);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 55px;
+}
+
+.contacto{
+    display: grid;
+}
