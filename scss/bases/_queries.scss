@@ -1,0 +1,91 @@
+/*- mdq index -*/
+
+@media screen and (max-width:386px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:772px) {
+    .prod-mas-vendidos {
+        flex-direction: row;
+    }
+
+    .prod-mas-vendidos img {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width:635px) {
+    .prod-mas-vendidos {
+        flex-direction: row;
+    }
+
+    .prod-mas-vendidos img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:545px) {
+    .prod-mas-vendidos {
+        flex-direction: row;
+    }
+
+    .prod-mas-vendidos img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .prod-mas-vendidos {
+        flex-direction: row;
+    }
+
+    .prod-mas-vendidos img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width:393px) {
+    .prod-mas-vendidos {
+        flex-direction: row;
+    }
+
+    .prod-mas-vendidos img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .prod-mas-vendidos {
+        flex-direction: row;
+    }
+
+    .prod-mas-vendidos img {
+        width: 66px;
+        height: 66px;
+    }
+}
+
+/*- mdq index -*/
+
+/*- mdq contacto -*/
+
+@media screen and (max-width:470px) {
+    .contacto-img h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:395px) {
+    .contacto-img h2 {
+        font-size: 30px;
+    }
+}
+
+/*- mdq contacto -*/

@@ -1,0 +1,14 @@
+/* Variables */
+
+$color-principal: rgba(254, 115, 0, 255);
+$color-secundario: white ;
+
+/* Listas */
+
+$colores: white black rgba(254, 115, 0, 255);
+
+.hero h2{
+    color: nth($colores, 1);
+}
+
+/* Operaciones */

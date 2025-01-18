@@ -1,3 +1,95 @@
+/* Variables */
+/* Listas */
+.hero h2 {
+  color: white;
+}
+
+/* Operaciones */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+/*- barra nav bootstrap -*/
+nav img {
+  width: 80px;
+  height: 80px;
+}
+
+.bg-barra {
+  background-color: rgb(254, 115, 0);
+}
+
+.dropdown-menu {
+  background-color: rgb(254, 115, 0);
+  border: 1px solid white;
+}
+
+.dropdown-item {
+  background-color: rgb(254, 115, 0);
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(251, 139, 36);
+  color: white;
+}
+
+.dropdown-divider {
+  background-color: white;
+}
+
+.btn-outline-success {
+  background-color: white;
+  color: rgb(254, 115, 0);
+  border: 1px solid white;
+}
+
+.btn-outline-success:hover {
+  background-color: rgb(254, 115, 0);
+  border: 1px solid white;
+}
+
+header {
+  background-color: rgb(254, 115, 0);
+}
+
+.nav-link.active {
+  color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+header h1 {
+  width: 100%;
+  font-size: 16px;
+  margin: 0%;
+  color: white;
+  padding: 5px;
+}
+
+/*- barra nav bootstrap -*/
+/*- botones -*/
+.btn.btn-primary {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  border-color: white;
+  background-color: rgb(254, 115, 0);
+  margin: 10px;
+}
+
+.btn-primary:hover {
+  color: rgb(254, 115, 0) !important;
+  border-color: rgb(254, 115, 0) !important;
+  background-color: white !important;
+}
+
+/*- Index -*/
 .hero {
   text-align: center;
   font-family: "Jost";
@@ -9,4 +101,235 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-}/*# sourceMappingURL=estilo.css.map */
+}
+
+.hero h2 {
+  font-size: 70px;
+}
+
+.bienvenidos {
+  text-align: center;
+  font-family: "Jost";
+  font-weight: 400;
+  color: white;
+  width: 100%;
+  height: 460px;
+  background-image: url("../img/bienvenidos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.bienvenidos-centro h2 {
+  font-size: 50px;
+  height: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafos-bienvenidos {
+  font-size: 25px;
+}
+
+.productos {
+  text-align: center;
+  font-family: "Jost";
+  font-weight: 600;
+  color: rgb(82, 76, 76);
+  width: 100%;
+  height: 150px;
+  background-image: url("../img/productos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.productos-centro h2 {
+  font-size: 50px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafo-prod {
+  font-size: 25px;
+}
+
+.mas-vendidos {
+  font-family: "Jost";
+  font-weight: 400;
+  color: white;
+  background-color: rgb(254, 115, 0);
+  height: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.mas-vendidos h2 {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prod-mas-vendidos div {
+  border: 3px solid white;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.prod-mas-vendidos {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.prod-mas-vendidos img {
+  width: 380px;
+  height: 380px;
+}
+
+/*- Index -*/
+/* Main Contactos*/
+.contacto-img {
+  padding: 50px;
+  width: 100%;
+  height: 600px;
+  background-image: url("../img/contacto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.contacto-img h2 {
+  margin: 30px;
+  color: white;
+  background-color: rgb(254, 115, 0);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 55px;
+}
+
+.contacto {
+  display: grid;
+}
+
+/* Main Contactos */
+footer {
+  width: 100%;
+  height: 160px;
+  background-color: white;
+}
+
+footer h3 {
+  color: black;
+  background-color: white;
+}
+
+footer div a .redes {
+  width: 30px;
+  height: 30px;
+  margin: 30px 150px 0px 85px;
+}
+
+footer .wpp-icono {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.contacto-footer {
+  text-align: center;
+}
+.contacto-footer h3 {
+  font-size: 3em;
+}
+.contacto-footer p {
+  font-size: 1.2em;
+}
+
+/*- mdq index -*/
+@media screen and (max-width: 386px) {
+  .header {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 772px) {
+  .prod-mas-vendidos {
+    flex-direction: row;
+  }
+  .prod-mas-vendidos img {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media screen and (max-width: 635px) {
+  .prod-mas-vendidos {
+    flex-direction: row;
+  }
+  .prod-mas-vendidos img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .prod-mas-vendidos {
+    flex-direction: row;
+  }
+  .prod-mas-vendidos img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .prod-mas-vendidos {
+    flex-direction: row;
+  }
+  .prod-mas-vendidos img {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media screen and (max-width: 393px) {
+  .prod-mas-vendidos {
+    flex-direction: row;
+  }
+  .prod-mas-vendidos img {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .prod-mas-vendidos {
+    flex-direction: row;
+  }
+  .prod-mas-vendidos img {
+    width: 66px;
+    height: 66px;
+  }
+}
+/*- mdq index -*/
+/*- mdq contacto -*/
+@media screen and (max-width: 470px) {
+  .contacto-img h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .contacto-img h2 {
+    font-size: 30px;
+  }
+}
+/*- mdq contacto -*//*# sourceMappingURL=estilo.css.map */
