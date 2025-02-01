@@ -75,7 +75,7 @@ header h1 {
     font-family: "Jost";
     color: white;
     width: 100%;
-    height: 700px;
+    height: 600px;
     background-image: url("../img/inicio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,6 +85,17 @@ header h1 {
 
 .hero h2 {
     font-size: 70px;
+}
+
+.boton-sobre-nosotros{
+    border: none;
+    background-color: white;
+    color: rgba(254, 115, 0, 255) !important;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: "Jost";
 }
 
 .bienvenidos {
@@ -146,12 +157,13 @@ header h1 {
     background-color: rgba(254, 115, 0, 255);
     height: 100%;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .mas-vendidos h2 {
-    height: 45px;
+    height: 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +172,9 @@ header h1 {
 .prod-mas-vendidos div {
     border: 3px solid white;
     text-align: center;
+    padding: 30px;
     border-radius: 20px;
+    margin: 20px;
 }
 
 .prod-mas-vendidos {
@@ -172,9 +186,13 @@ header h1 {
     flex-wrap: wrap;
 }
 
-.prod-mas-vendidos img {
-    width: 380px;
-    height: 380px;
+.prod-mas-vendidos img{
+    width: 220px;
+    height: 220px;
+}
+
+.prod-mas-vendidos h3{
+    font-size: 30px;
 }
 
 .btn.btn-primary {
@@ -225,16 +243,6 @@ footer .wpp-icono {
     right: 10px;
 }
 
-.contacto-footer {
-    text-align: center;
-    h3 {
-        font-size: 3em;
-    }
-    p {
-        font-size: 1.2em;
-    }
-}
-
 /*- footer -*/
 
 
@@ -246,11 +254,35 @@ footer .wpp-icono {
     }
 }
 
+@media screen and (max-width:999px){
+    .prod-mas-vendidos{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .prod-mas-vendidos img{
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width:910px){
+    .prod-mas-vendidos img{
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width:860px){
+    .prod-mas-vendidos img{
+        width: 280px;
+        height: 280px;
+    }
+}
+
 @media screen and (max-width:772px) {
     .prod-mas-vendidos {
         flex-direction: row;
     }
-
     .prod-mas-vendidos img {
         width: 260px;
         height: 260px;
@@ -261,21 +293,21 @@ footer .wpp-icono {
     .prod-mas-vendidos {
         flex-direction: row;
     }
-
     .prod-mas-vendidos img {
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
     }
 }
 
 @media screen and (max-width:545px) {
     .prod-mas-vendidos {
         flex-direction: row;
+        padding-left: 10%;
+        padding-right: 10%;
     }
-
     .prod-mas-vendidos img {
-        width: 150px;
-        height: 150px;
+        width: 220px;
+        height: 220px;
     }
 }
 
@@ -283,10 +315,10 @@ footer .wpp-icono {
     .prod-mas-vendidos {
         flex-direction: row;
     }
-
     .prod-mas-vendidos img {
-        width: 130px;
-        height: 130px;
+        width: 200px;
+        height: 200px;
+    }
     }
 }
 
@@ -294,10 +326,9 @@ footer .wpp-icono {
     .prod-mas-vendidos {
         flex-direction: row;
     }
-
     .prod-mas-vendidos img {
-        width: 70px;
-        height: 70px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -305,10 +336,9 @@ footer .wpp-icono {
     .prod-mas-vendidos {
         flex-direction: row;
     }
-
     .prod-mas-vendidos img {
-        width: 66px;
-        height: 66px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -533,7 +563,8 @@ div h5.card-title {
     background-color: rgba(254, 115, 0, 255);
     padding: 10px;
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
+    padding-bottom: 2%;
     margin-bottom: 0%
 }
 
@@ -541,6 +572,7 @@ div h5.card-title {
     background-color: rgba(254, 115, 0, 255);
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 120px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -553,9 +585,11 @@ h3 {
     background-color: rgba(254, 115, 0, 255);
     padding: 10px;
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
+    padding-bottom: 2%;
     margin-bottom: 0%
 }
+
 
 .card-body a.btn.btn-primary {
     font-size: 20px;
@@ -643,9 +677,51 @@ h3 {
         column-gap: 300px;
         grid-template-columns: 1fr;
         grid-auto-rows: 400px;
+        padding-left: 30%;
     }
 }
 
+@media screen and (max-width:680px){
+    .menu-cards {
+        padding-left: 29%;
+    }
+}
+
+@media screen and (max-width:640px){
+    .menu-cards{
+        padding-left: 27%;
+    }
+}
+
+@media screen and (max-width:585px){
+    .menu-cards{
+        padding-left: 24%;
+    }
+}
+
+@media screen and (max-width:510px){
+    .menu-cards{
+        padding-left: 20%;
+    }
+}
+
+@media screen and (max-width:460px){
+    .menu-cards{
+        padding-left: 17%;
+    }
+}
+
+@media screen and (max-width:420px){
+    .menu-cards{
+        padding-left: 14%;
+    }
+}
+
+@media screen and (max-width:380px){
+    .menu-cards{
+        padding-left: 10%;
+    }
+}
 
 /*- menu -*/
 
