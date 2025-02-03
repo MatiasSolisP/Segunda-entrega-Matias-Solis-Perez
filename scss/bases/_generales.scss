@@ -6,70 +6,58 @@
 }
 
 /*- barra nav bootstrap -*/
-
-nav img {
-    width: 80px;
-    height: 80px;
-}
-
-.bg-barra {
-    background-color: rgba(254, 115, 0, 255);
-}
-
-.dropdown-menu {
-    background-color: rgba(254, 115, 0, 255);
-    border: 1px solid white;
-}
-
-.dropdown-item {
-    background-color: rgba(254, 115, 0, 255);
-    color: white;
-}
-
-.dropdown-item:hover {
-    background-color: rgba(251, 139, 36, 255);
-    color: white;
-}
-
-.dropdown-divider {
-    background-color: white;
-}
-
-.btn-outline-success {
-    background-color: white;
-    color: rgba(254, 115, 0, 255);
-    border: 1px solid white;
-}
-
-.btn-outline-success:hover {
-    background-color: rgba(254, 115, 0, 255);
-    border: 1px solid white;
-}
-
 header {
     background-color: rgba(254, 115, 0, 255);
+    nav{
+        .bg-barra {
+            background-color: rgba(254, 115, 0, 255);
+        }
+        img {
+            width: 80px;
+            height: 80px;
+        }
+        .dropdown-menu {
+            background-color: rgba(254, 115, 0, 255);
+            border: 1px solid white;
+            .dropdown-divider {
+                background-color: white;
+            }
+            .dropdown-item {
+            background-color: rgba(254, 115, 0, 255);
+            color: white;
+                &:hover{
+                    background-color: rgba(251, 139, 36, 255);
+                    color: white;
+                }
+            }
+        }
+        .nav-link.active {
+            color: white !important;
+        }
+        .nav-link {
+            color: white !important;
+        }
+        .btn-outline-success {
+            background-color: white;
+            color: rgba(254, 115, 0, 255);
+            border: 1px solid white;
+            &:hover{
+                background-color: rgba(254, 115, 0, 255) !important;
+                border: 1px solid white !important;
+            }
+        }
+    }
+    h1 {
+        width: 100%;
+        font-size: 16px;
+        margin: 0%;
+        color: white;
+        padding: 5px;
+    }
 }
-
-.nav-link.active {
-    color: white !important;
-}
-
-.nav-link {
-    color: white !important;
-}
-
-header h1 {
-    width: 100%;
-    font-size: 16px;
-    margin: 0%;
-    color: white;
-    padding: 5px;
-}
-
 /*- barra nav bootstrap -*/
 
-/*- botones -*/
-
+/*- botones bootstrap -*/
 .btn.btn-primary {
     font-size: 20px;
     text-align: center;
@@ -77,10 +65,12 @@ header h1 {
     border-color: white;
     background-color: rgba(254, 115, 0, 255);
     margin: 10px;
+    .btn-primary {
+        &:hover{
+            color: rgba(254, 115, 0, 255) !important;
+            border-color: rgba(254, 115, 0, 255) !important;
+            background-color: white !important;
+        }
+    }
 }
-
-.btn-primary:hover {
-    color: rgba(254, 115, 0, 255) !important;
-    border-color: rgba(254, 115, 0, 255) !important;
-    background-color: white !important;
-}
+/*- botones bootstrap -*/

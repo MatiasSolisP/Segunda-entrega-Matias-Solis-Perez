@@ -2,13 +2,49 @@
 
 $color-principal: rgba(254, 115, 0, 255);
 $color-secundario: white ;
+$color-terciario: black;
 
 /* Listas */
 
 $colores: white black rgba(254, 115, 0, 255);
 
-.hero h2{
+.hero{
     color: nth($colores, 1);
 }
 
 /* Operaciones */
+/* operaciones */
+
+/*mapa*/
+$boton:(
+    bg-boton: rgba(254, 115, 0, 255),
+    borde-boton:solid white,
+    color-texto: white,
+);
+
+.boton-sobre-nosotros{
+    color: map-get($boton, color-texto );
+    background-color: map-get($boton, bg-boton );
+    border: map-get($boton, borde-boton );
+}
+/*mapa*/
+/*Extends*/
+%flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*extends*/
+/*Mixin*/
+@mixin flex ($flex,$justify,$align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid ($grid,$direction,$auto-rows){
+    display: $grid;
+    grid-template-columns: $direction;
+    grid-auto-rows: $auto-rows;
+}
+
