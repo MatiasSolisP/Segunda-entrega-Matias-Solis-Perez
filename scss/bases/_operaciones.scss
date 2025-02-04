@@ -4,6 +4,12 @@ $color-principal: rgba(254, 115, 0, 255);
 $color-secundario: white ;
 $color-terciario: black;
 
+$breakpoints:(
+    "phone":360px,
+    "tablet":768px,
+    "desktop":1366px,
+    "LGdesktop": 1920px
+) !default;
 /* Listas */
 
 $colores: white black rgba(254, 115, 0, 255);
